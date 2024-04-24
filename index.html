@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent A Home</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header, footer { background-color: #04AA6D; color: white; padding: 10px; text-align: center; }
+  section { margin: 20px; }
+  .container { display: flex; flex-direction: column; align-items: center; }
+  .form-group { margin-bottom: 10px; }
+  label { margin-right: 10px; }
+</style>
+</head>
+<body>
+<header>
+<h1>Rent A Dream Home</h1>
+</header>
+<section>
+<div class="container">
+  <!-- Form Example -->
+  <form id="rentalForm">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <select id="location" name="location">
+        <option value="city1">City 1</option>
+        <option value="city2">City 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="radio" id="buy" name="purpose" value="buy">
+      <label for="buy">Buy</label>
+      <input type="radio" id="rent" name="purpose" value="rent" checked>
+      <label for="rent">Rent</label>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</section>
+<footer>
+<p>Address: 123 Dream Lane, Apartment World</p>
+<p>Email: contact@rentahome.com</p>
+<p>Phone: (123) 456-7890</p>
+<a href="terms.html">Terms and Conditions</a>
+</footer>
+<script>
+  document.getElementById('rentalForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Form submitted');
+    // Add more form validation and submission logic here
+  });
+</script>
+</body>
+</html>
